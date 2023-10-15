@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Registration Form</title>
+	<style>
+		body {
+			background-color: #FFB000;
+			font-family: Arial, sans-serif;
+		}
+
+		h1 {
+			text-align: center;
+			margin-top: 30px;
+		}
+
+		form {
+			margin: 0 auto;
+			max-width: 400px;
+			padding: 20px;
+			background-color: #F9F9F9;
+			border-radius: 5px;
+		}
+
+		div {
+			margin-bottom: 10px;
+		}
+
+		label {
+			display: inline-block;
+			width: 150px;
+			text-align: left;
+		}
+
+		input[type="text"],
+		input[type="email"],
+		input[type="tel"],
+		input[type="date"],
+		select {
+			width: 200px;
+			padding: 5px;
+			border-radius: 3px;
+			border: 1px solid #ccc;
+		}
+
+		input[type="submit"] {
+			background-color: #FFB000;
+			color: white;
+			border: none;
+			padding: 10px;
+			width: 100%;
+			border-radius: 3px;
+			cursor: pointer;
+			font-weight: bold;
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Student Registration Form</h1>
+	<form>
+		<div>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+		</div>
+		<div>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+		</div>
+		<div>
+			<label for="phone">Phone:</label>
+			<input type="tel" id="phone" name="phone" required>
+		</div>
+		<div>
+			<label for="dob">Date of Birth:</label>
+			<input type="date" id="dob" name="dob" required>
+		</div>
+		<div>
+			<label for="gender">Gender:</label>
+			<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+<input type="radio" name="gender" value="other"> Other
+		</div>
+		<div>
+			<label for="course">Course:</label>
+  <select name="couse" id="course">
+  <option value="BCA">BCA</option>
+  <option value="BBA">BBA</option>
+  <option value="BSc.CS">BSc.CS</option>
+</select>
+		</div>
+		<div>
+			<label for="Address">Enter your address:</label>
+<textarea id="w3review" name="w3review" rows="4" cols="50">
+</textarea>
+		</div>
+		<div>
+		<label for="favcolor">Select your favorite color:</label>
+  <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+  <input type="submit" value="Submit">
+  </div>
+		<div>
+			<label for="year">Year:</label>
+			<input type="text" id="year" name="year" required>
+		</div>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html
